@@ -1,0 +1,14 @@
+[[manager.prepend_keymap]]
+on   = [ "c", "a" ]
+run  = "plugin compress"
+desc = "Archive selected files"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "e"]
+run  = "cd ~/Documents/Uni/Estructuras"
+desc = "Goto /Estructuras"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "u"]
+run  = "cd ~/Documents/Uni"
+desc = "Goto /Uni"
