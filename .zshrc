@@ -57,12 +57,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls -1 --color'
 alias ll='ls -lah'
+alias rm='rm -i'
 alias yay='paru'
 alias pipes='pipes.sh'
 alias vim='nvim'
 alias ..='cd ..'
 alias ff='fastfetch'
 alias pf='pfetch'
+alias hyprconf='vim ~/.config/hypr/hyprland.conf'
 
 
 # Shell integrations
