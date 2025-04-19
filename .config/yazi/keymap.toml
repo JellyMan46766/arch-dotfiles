@@ -12,3 +12,8 @@ desc = "Goto /Estructuras"
 on   = [ "g", "u"]
 run  = "cd ~/Documents/Uni"
 desc = "Goto /Uni"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "d"]
+run  = "cd ~/Documents"
+desc = "Goto /Documents"
