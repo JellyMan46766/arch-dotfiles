@@ -73,3 +73,14 @@ eval "$(fzf --zsh)"
 
 # Custom env variables
 export XDG_CONFIG_HOME=/home/jelly/.config
+
+# Functions
+# Shell wrapper to change current working directory when exiting Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
