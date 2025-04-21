@@ -16,11 +16,11 @@
         "memory",
 	"temperature",
         "cpu",
-        "network",
-       //"battery",
         "backlight",
-        "pulseaudio",
-        "pulseaudio#microphone"
+        "network"
+       //"battery",
+        //"pulseaudio",
+        //"pulseaudio#microphone"
     ],
 
     "temperature": {
