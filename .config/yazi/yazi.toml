@@ -1,4 +1,7 @@
- [opener]
+[manager]
+linemode = "size"
+
+[opener]
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
@@ -6,5 +9,5 @@ edit = [
 	{ run = '${EDITOR:=nvim} "$@"', desc = "nvim", block = true, for = "unix" },
 ]
 open = [
-	{ run = 'xdg-open "$@"', desc = "Open" },
+	{ run = 'xdg-open "$@"', desc = "xdg-open default" },
 ]
