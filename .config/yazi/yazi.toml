@@ -11,3 +11,15 @@ edit = [
 open = [
 	{ run = 'xdg-open "$@"', desc = "xdg-open default" },
 ]
+
+[open]
+prepend_rules = [
+  { name = "*.html", use = [ "open", "edit" ] },
+]
+
+[input]
+
+#create
+create_title  = [ "Create:", "Create (dir):" ]
+create_origin = "hovered"
+create_offset = [ 0, 1, 50, 3 ]

@@ -1,19 +1,16 @@
-[[manager.prepend_keymap]]
-on   = [ "c", "a" ]
-run  = "plugin compress"
-desc = "Archive selected files"
+[manager]
+prepend_keymap = [
 
-[[manager.prepend_keymap]]
-on   = [ "g", "e"]
-run  = "cd ~/Documents/Uni/Estructuras"
-desc = "Goto /Estructuras"
+  # Compression
+  { on = [ "c", "a" ], run = "plugin compress", desc = "Archive selected files"},
 
-[[manager.prepend_keymap]]
-on   = [ "g", "u"]
-run  = "cd ~/Documents/Uni"
-desc = "Goto /Uni"
+  # Custom gotos
+  { on = [ "g", "e" ], run = "cd ~/Documents/Uni/Estructuras", desc = "Goto /Estructuras"},
+  { on = [ "g", "u" ], run = "cd ~/Documents/Uni", desc = "Goto /Uni"},
+  { on = [ "g", "d" ], run = "cd ~/Documents", desc = "Goto /Documents"},
 
-[[manager.prepend_keymap]]
-on   = [ "g", "d"]
-run  = "cd ~/Documents"
-desc = "Goto /Documents"
+ # Navigate up and down without wraparound scrolling
+  # { on = "k", run = "arrow -1", desc = "Previous file" },
+  # { on = "j", run = "arrow 1", desc = "Next file" },
+]
+
