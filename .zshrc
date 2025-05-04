@@ -63,7 +63,7 @@ alias vim='nvim'
 alias ..='cd ..'
 alias ff='fastfetch'
 alias pf='pfetch'
-alias hyprconf='vim ~/.config/hypr/hyprland.conf'
+alias hyprconf='vim ~/arch-dotfiles/.config/hypr/hyprland.conf'
 alias paccache-clear='~/.local/bin/paccache-clear.sh'
 
 
