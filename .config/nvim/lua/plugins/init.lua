@@ -27,4 +27,11 @@ return {
   --   event = 'VimEnter',
   --   config = true,
   -- },
+  {
+    'arnamak/stay-centered.nvim',
+    lazy = false,
+    opts = {
+      skip_filetypes = { },
+    }
+  }
 }
