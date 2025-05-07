@@ -8,13 +8,14 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["custom/player"],
     "modules-right": [
         "tray",
         "memory",
-	"temperature",
+        "temperature",
         "cpu",
         "backlight",
         "network"
@@ -42,6 +43,13 @@
     "tray": {
         "icon-size": 13,
         "spacing": 10
+    },
+
+    "custom/player": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/arch-dotfiles/.config/waybar/modules/player.sh",
+        "escape": true
     },
 
     "clock": {

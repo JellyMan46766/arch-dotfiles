@@ -50,6 +50,7 @@ window#waybar {
 #memory,
 #workspaces,
 #tray,
+#custom-player,
 #backlight {
     background: #1e1e2e;
     padding: 0px 10px;
@@ -62,7 +63,7 @@ window#waybar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#tray {
+#tray, #custom-player {
     border-radius: 10px;
     margin-right: 10px;
 }
@@ -86,8 +87,8 @@ window#waybar {
 
 #window {
     border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #clock {
