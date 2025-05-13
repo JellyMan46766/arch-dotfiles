@@ -63,9 +63,14 @@ window#waybar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#tray, #custom-player {
+#tray {
     border-radius: 10px;
     margin-right: 10px;
+}
+
+#custom-player {
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 #workspaces {

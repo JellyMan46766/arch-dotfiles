@@ -8,10 +8,12 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "hyprland/workspaces",
+        "custom/player",
         "hyprland/window"
     ],
-    "modules-center": ["custom/player"],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
     "modules-right": [
         "tray",
         "memory",
