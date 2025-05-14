@@ -9,9 +9,26 @@ prepend_keymap = [
   { on = [ "g", "u" ], run = "cd ~/Documents/Uni", desc = "Goto /Uni"},
   { on = [ "g", "d" ], run = "cd ~/Documents", desc = "Goto /Documents"},
 
+  # Open shell
   { on = "!", run = 'shell "$SHELL" --block', desc = "Open $SHELL here", for = "unix"},
 
- # Navigate up and down without wraparound scrolling
+  # Toggle preview pane
+  { on = "t", run = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane"},
+  { on = "T", run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane"},
+
+  # Open files and enter directories all with 'l'
+  { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file"},
+
+  # Chmod selected files
+  { on = [ "c", "m" ], run = "plugin chmod", desc = "Chmod on selected files"},
+
+  # Calculate size of selected or cwd
+  { on = "~", run = "plugin what-size -- '-c'", desc = "Calc size of selection or cwd" },
+
+  # Restore trashed files
+  { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
+  
+  # Navigate up and down without wraparound scrolling
   # { on = "k", run = "arrow -1", desc = "Previous file" },
   # { on = "j", run = "arrow 1", desc = "Next file" },
 ]
