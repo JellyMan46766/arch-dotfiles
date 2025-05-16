@@ -5,4 +5,4 @@ require("full-border"):setup()
 require("git"):setup()
 
 -- No status-bar init
-require("no-status"):setup()
+-- require("no-status"):setup()
