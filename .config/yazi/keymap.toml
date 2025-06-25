@@ -18,6 +18,7 @@ prepend_keymap = [
 
   # Open files and enter directories all with 'l'
   { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file"},
+  { on = "L", run = "open --interactive", desc = "Open the file interactively"},
 
   # Chmod selected files
   { on = [ "c", "m" ], run = "plugin chmod", desc = "Chmod on selected files"},
