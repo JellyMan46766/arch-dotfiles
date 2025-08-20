@@ -57,12 +57,6 @@
       "keyColor": "blue",
     },
     {
-      "type": "gpu",
-      "format": "{2}",
-      "key": "  GPU",
-      "keyColor": "blue",
-    },
-    {
       "type": "memory",
       "key": "  Memory",
       "keyColor": "magenta",
