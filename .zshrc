@@ -65,6 +65,7 @@ alias ff='fastfetch'
 alias pf='pfetch'
 alias hyprconf='vim ~/arch-dotfiles/.config/hypr/hyprland.conf'
 alias paccache-clear='~/.local/bin/paccache-clear.sh'
+alias lain='lein'
 
 
 # Shell integrations
